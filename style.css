@@ -1,0 +1,231 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+  padding-left: 20px;
+  justify-content: center;
+  background: linear-gradient(135deg, #2C3E50, #2980B9);
+  gap: 35px;
+}
+
+nav li {
+  margin: -5 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  text-decoration-line: underline;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  animation: glow 2s ease-in-out infinite alternate; 
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#papers h2 {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  animation: glow 2s ease-in-out infinite alternate; 
+}
+
+.paper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.paperi {
+  background: linear-gradient(135deg, #2C3E50, #2980B9);
+  display: grid;
+  justify-content: center;
+  padding: 15%;
+}
+
+.paperi p {
+  text-wrap: 12px;
+  color: white;
+  padding: 0px 30px 30px 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.MorePapers {
+  display: flex;
+  justify-content: center; 
+   background: linear-gradient(135deg, #2C3E50, #2980B9);
+   padding: 10px 10px;
+  animation: glow1 3s ease-in-out infinite alternate; 
+}
+.button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  width: 100%; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 10px #ed0552;
+  }
+  100% {
+      box-shadow: 0 0 20px #cce608, 0 0 30px #3498db;
+  }
+}
+@keyframes glow1 {
+  0% {
+      box-shadow: 0 0 10px #e201f6;
+  }
+  100% {
+      box-shadow: 0 0 20px #5700f8, 0 0 30px #030303;
+  }
+}
+.container1 {
+  background: linear-gradient(135deg, #2C3E50, #2980B9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container1 h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.hobby {
+  align-items: center;
+  color: black;
+ 
+}
+
+.hobby-item {
+  color: #fff;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.container2 {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+.container2 h2 {
+  text-align: center;
+  color: black;
+}
+
+.container2 article {
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+.container2 h3 {
+  font-size: 20px;
+  color: black;
+}
+
+.container2 p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+}
+
+.quantum {
+  font-style: italic;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul a {
+    font-size: 12px;
+  }
+
+  #about h2 {
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+
+  }
+
+  #papers h2 {
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .paper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+
+  .hobby {
+    gap: 10px;
+    justify-content: center;
+  }
+
+}
